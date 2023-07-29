@@ -1,0 +1,46 @@
+/* General styles for all screen sizes */
+#topic {
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(37, 129, 129);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.img {
+    width: 100%;
+    height: 400px;
+}
+
+.name {
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(37, 129, 129);
+}
+
+/* Responsive styles using media queries */
+@media (min-width: 640px) {
+    .grid-cols-1 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width:920px){
+    .grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
